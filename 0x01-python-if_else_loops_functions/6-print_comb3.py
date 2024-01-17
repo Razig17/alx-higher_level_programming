@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 for i in range(0, 8):
-    j = i + 1
-    while (j < 10):
+    for j in range(i + 1, 10):
         print(f"{i}{j}", end=", ")
-        j += 1
-    i += 1
 else:
-    print(f"{i}{i + 1}")
+    print(f"{i + 1}{j}")
