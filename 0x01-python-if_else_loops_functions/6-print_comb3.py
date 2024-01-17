@@ -2,5 +2,5 @@
 for i in range(0, 8):
     for j in range(i + 1, 10):
         print(f"{i}{j}", end=", ")
-else:
-    print(f"{i + 1}{j}")
+
+print(f"{i + 1}{j}")
