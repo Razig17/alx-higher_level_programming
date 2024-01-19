@@ -5,10 +5,10 @@ if __name__ == "__main__":
 
     argc = len(argv) - 1
     if (argc == 0):
-        print("0 arguments:")
+        print("0 arguments.")
     elif (argc == 1):
         print(f"1 argument\n1: {argv[1]}")
-    else: 
+    else:
         print(f"{argc} arguments:")
-        for i in range (1, argc + 1):
+        for i in range(1, argc + 1):
             print(f"{i}: {argv[i]}")
