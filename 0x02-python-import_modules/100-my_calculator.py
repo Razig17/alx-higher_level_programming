@@ -18,6 +18,6 @@ if __name__ == "__main__":
         if (op == operators[i]):
             print(f"{a} {operators[i]} {b} = {functions[i](a, b)}")
 
-        elif(argv[2] not in list(operators)):
+        elif (argv[2] not in list(operators)):
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
