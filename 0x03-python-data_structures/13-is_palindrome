@@ -14,20 +14,17 @@ int is_palindrome(listint_t **head)
 	int i = 0, j;
 	int *nums;
 
+	nums = malloc(sizeof(int));
 	tmp = *head;
 	while (tmp)
 	{
 		i++;
+		nums = realloc(nums, (sizeof(int) * i));
+		nums[i - 1] = tmp->n;
+
 		tmp = tmp->next;
 	}
 
-	nums = malloc(sizeof(int) * i);
-	tmp = *head;
-	for (j = 0; tmp; j++)
-	{
-		nums[j] = tmp->n;
-		tmp = tmp->next;
-	}
 	for (j = 0; j < (i / 2); j++)
 	{
 		if (nums[j] != nums[i - j - 1])
