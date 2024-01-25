@@ -14,4 +14,5 @@ def roman_to_int(roman_string):
             else:
                 num = roman.get(c) + num
             pre = c
+
     return num
