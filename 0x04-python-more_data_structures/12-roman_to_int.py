@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
         for c in roman_string:
 
             if pre + c in subtract.keys():
-                print("found", pre + c)
+                
                 num += subtract.get(pre + c) - roman.get(pre)
             else:
                 num = roman.get(c) + num
