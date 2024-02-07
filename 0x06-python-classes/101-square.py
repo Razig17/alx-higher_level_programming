@@ -16,7 +16,7 @@ class Square:
 
         pos = ""
         if self.size == 0:
-            return "\n"
+            return ""
         for w in range(self.position[1]):
             pos += "\n"
         for w in range(self.size):
