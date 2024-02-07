@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """square class"""
 
 
@@ -57,19 +59,3 @@ class Square:
 
         for i in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
-
-    def __str__(self):
-        """" Prints the square"""
-
-        pos = ""
-        if self.__size == 0:
-            return "\n"
-        for w in range(self.__position[1]):
-            pos += "\n"
-        for w in range(self.__size):
-            for i in range(self.__position[0]):
-                pos += " "
-            for j in range(self.__size):
-                pos += "#"
-            pos += "\n"
-        return pos
