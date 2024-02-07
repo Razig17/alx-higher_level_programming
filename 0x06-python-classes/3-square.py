@@ -4,10 +4,10 @@
 
 
 class Square:
-    """"A class Square that defines a square by size"""
+    """class that defines a square with size"""
 
     def __init__(self, size=0):
-        """Initialize the size with a postive integer"""
+        """Initialize the size with a positive value"""
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
