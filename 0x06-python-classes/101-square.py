@@ -11,7 +11,6 @@ class Square:
         self.size = size
         self.position = position
 
-
     def __str__(self):
         """A method to print square when using print"""
 
@@ -26,7 +25,7 @@ class Square:
             for j in range(self.size):
                 pos += "#"
             pos += "\n"
-        return pos
+        return pos[:-1]
 
     @property
     def size(self):
