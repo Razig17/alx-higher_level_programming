@@ -49,14 +49,13 @@ class Rectangle:
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        """Returns a srting with the rectangle with the character #"""
-
+        """Returns a srting of the rectangle with the character #"""
         rec = ""
-        if self.__height == 0 or self.__height == 0:
-            return (rec)
-        for i in range(self.__height):
-            for j in range(self.__width):
+        if self.__width == 0 or self.__height == 0:
+            return  (rec)
+        for row in range(self.__height):
+            for col in range(self.__width):
                 rec += "#"
-            if (i != (self.__height - 1)):
+            if (row != (self.__height - 1)):
                 rec += "\n"
-        return (rec)
+        return  (rec)
