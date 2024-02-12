@@ -51,7 +51,8 @@ class Rectangle:
     def __str__(self):
         """Returns a srting with the rectangle with the character #
         exmaple: ####
-                 ####"""
+                 ####
+        """
         rec = ""
         if self.__height == 0 or self.__height == 0:
             return (rec)
