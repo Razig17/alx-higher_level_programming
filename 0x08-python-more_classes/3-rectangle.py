@@ -52,10 +52,10 @@ class Rectangle:
         """Returns a srting of the rectangle with the character #"""
         rec = ""
         if self.__width == 0 or self.__height == 0:
-            return  (rec)
+            return (rec)
         for row in range(self.__height):
             for col in range(self.__width):
                 rec += "#"
             if (row != (self.__height - 1)):
                 rec += "\n"
-        return  (rec)
+        return (rec)
