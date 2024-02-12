@@ -49,10 +49,8 @@ class Rectangle:
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        """Returns a srting with the rectangle with the character #
-        exmaple: ####
-                 ####
-        """
+        """Returns a srting with the rectangle with the character #"""
+
         rec = ""
         if self.__height == 0 or self.__height == 0:
             return (rec)
