@@ -53,6 +53,8 @@ class Rectangle:
         exmaple: ####
                  ####"""
         rec = ""
+        if self.__height == 0 or self.__height == 0:
+            return (rec)
         for i in range(self.height):
             for i in range(self.width):
                 rec += "#"
