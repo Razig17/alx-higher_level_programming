@@ -1,8 +1,11 @@
+#!/usr/bin/python3
 """
 
 Module contains a function that multiplies 2 matrices
 
 """
+
+
 import numpy as np
 
 
