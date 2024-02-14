@@ -16,7 +16,6 @@ Test passing an integer
 
 Test passing 0
     >>> print_square(0)
-    <BLANKLINE>
 
 Test passing a negative integer
     >>> print_square(-5)
