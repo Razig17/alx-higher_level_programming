@@ -1,0 +1,40 @@
+"1-my_list" module
+===================
+
+Class "MyList"
+Imporing the Class:
+        >>> MyList = __import__('1-my_list').MyList
+
+Test Normal usage:
+        >>> M = MyList()
+
+Test Postive Numbers:
+        >>> my_list = MyList([3, 5, 4])
+	>>> my_list.print_sorted()
+	[3, 4, 5]
+	>>> print(my_list)
+	[3, 5, 4]
+
+Test Empty List:
+        >>> my_list = MyList()
+        >>> my_list.print_sorted()
+        []
+
+Test One Element:
+        >>> my_list = MyList([1])
+        >>> my_list.print_sorted()
+        [1]
+
+Test Negative Numbers
+        >>> my_list = MyList([-3, -5, -4, -18, -10])
+	>>> my_list.print_sorted()
+	[-18, -10, -5, -4, -3]
+	>>> print(my_list)
+	[-3, -5, -4, -18, -10]
+
+Test the print_sorted from Parent Class
+        >>> list = [1, 2, 3]
+	>>> list.print_sorted()
+	Traceback (most recent call last):
+		...
+	AttributeError: 'list' object has no attribute 'print_sorted'
