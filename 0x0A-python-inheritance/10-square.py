@@ -10,7 +10,7 @@ class Square(Rectangle):
     """Square class"""
 
     def __init__(self, size):
-        """  Initialize size """
+        """Initialize size"""
 
         super().integer_validator("size", size)
         super().__init__(size, size)
