@@ -3,7 +3,7 @@
 
 Class "BaseGeometry"
 Imporing the Class:
-        >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 Test passing an argument
