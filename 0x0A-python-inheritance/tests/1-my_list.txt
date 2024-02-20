@@ -38,3 +38,10 @@ Test the print_sorted from Parent Class
 	Traceback (most recent call last):
 		...
 	AttributeError: 'list' object has no attribute 'print_sorted'
+
+Test passing an integer and a string:
+        >>> list = MyList([8008, "hello"])
+	>>> list.print_sorted()
+	Traceback (most recent call last):
+		...
+	TypeError: '<' not supported between instances of 'str' and 'int'
