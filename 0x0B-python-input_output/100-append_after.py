@@ -10,7 +10,7 @@ def append_after(filename="", search_string="", new_string=""):
     """
 
     lns = ""
-    with open(filename, mode="r", encoding="UTF8") as file:
+    with open(filename, mode="r", encoding="utf-8") as file:
         for ln in file:
             if search_string in ln:
                 ln += new_string
