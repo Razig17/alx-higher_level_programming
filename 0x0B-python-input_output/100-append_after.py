@@ -14,7 +14,7 @@ def append_after(filename="", search_string="", new_string=""):
         for ln in file:
             if search_string in ln:
                 ln += new_string
-        lns += ln
+            lns += ln
 
     with open(filename, mode="w", encoding="utf-8") as file:
         file.write(lns)
