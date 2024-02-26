@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-
-
 """This module contains "Rectangle" class"""
 
-Base = __import__('base').Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -138,3 +136,14 @@ class Rectangle(Base):
                 "x": self.x,
                 "y": self.y
         }
+if 1:
+
+    r1 = Rectangle(10, 2)
+    print(r1.id)
+
+    r2 = Rectangle(2, 10)
+    print(r2.id)
+
+    r3 = Rectangle(10, 2, 0, 0, 12)
+    print(r3.id)
+
