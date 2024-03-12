@@ -14,7 +14,7 @@ class Student():
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs):
+    def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a Student instance"""
         json = {"first_name": self.first_name, "last_name": self.last_name,
                 "age": self.age}
@@ -24,7 +24,6 @@ class Student():
                 if type(attr) is not str:
                     return json
             return {key: val for key, val in json.items() if key in attrs}
-
         return json
 
     def reload_from_json(self, json):
