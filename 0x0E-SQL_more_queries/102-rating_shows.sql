@@ -1,0 +1,10 @@
+-- SQL script to list all shows from hbtn_0d_tvshows_rate by their rating
+-- Select shows from the tv_shows table and their corresponding rating sum from the tv_show_ratings table
+-- Group by show_id and calculate the sum of ratings for each show
+-- Sort the results in descending order by the rating sum
+SELECT tv_shows.title, SUM(tv_show_ratings.rate) AS rating
+FROM tv_shows INNER JOIN tv_show_ratings
+ON tv_shows.id = tv_show_ratings.show_id
+ GROUP BY ts.title
+ ORDER BY rating DESC;
+ 
