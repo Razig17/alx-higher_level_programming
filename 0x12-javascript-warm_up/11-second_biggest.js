@@ -10,16 +10,15 @@ if (process.argv[3]) {
     n = max2;
     max2 = max;
     max = max2;
-    n = 0;
   }
   while (process.argv[i] !== undefined) {
     n = parseInt(process.argv[i]);
-      if (n > max) {
-        max2 = max;
-        max = n;
-      } else if (n > max2) {
-        max2 = n;
-      }
+    if (n > max) {
+      max2 = max;
+      max = n;
+    } else if (n > max2) {
+      max2 = n;
+    }
     i++;
   }
 }
