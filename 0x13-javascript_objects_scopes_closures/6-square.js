@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const Square = require('./6-square');
 
-module.exports = class Square extends Rectangle {
+module.exports = class Square extends Square {
   constructor (size) {
     super(size, size);
   }
