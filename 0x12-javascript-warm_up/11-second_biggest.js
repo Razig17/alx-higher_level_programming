@@ -14,14 +14,12 @@ if (process.argv[3]) {
   }
   while (process.argv[i] !== undefined) {
     n = parseInt(process.argv[i]);
-    if (n) {
       if (n > max) {
         max2 = max;
         max = n;
       } else if (n > max2) {
         max2 = n;
       }
-    }
     i++;
   }
 }
