@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let i = 4;
 let max = 0;
-let max2 = 0;
+let max2 = '0';
 let n = 0;
 if (process.argv[3]) {
   max = parseInt(process.argv[2]);
