@@ -1,17 +1,16 @@
 #!/usr/bin/node
-let i = 4;
 let max = 0;
 let max2 = '0';
 let n = 0;
 if (process.argv[3]) {
   max = parseInt(process.argv[2]);
   max2 = parseInt(process.argv[3]);
-  if (max2 > max) {
+  if (max > max2) {
     n = max2;
     max2 = max;
-    max = max2;
+    max = n;
   }
-  while (process.argv[i] !== undefined) {
+  for (let i = 2; i < process.argv.length; i++) {
     n = parseInt(process.argv[i]);
     if (n > max) {
       max2 = max;
@@ -19,7 +18,6 @@ if (process.argv[3]) {
     } else if (n > max2) {
       max2 = n;
     }
-    i++;
   }
 }
 console.log(max2);
