@@ -20,4 +20,4 @@ if __name__ == "__main__":
 
     states = session.query(State, City).filter(State.id == City.state_id).all()
     for state, city in states:
-        print("{state.name}: ({city.id}) {city.name}")
+        print(f"{state.name}: ({city.id}) {city.name}")
