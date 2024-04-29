@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 
-import sys
-from sqlalchemy import create_engine
-from relationship_city import City, Base
-from relationship_state import State
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-
+"""A a script that creates the State “California” with the City “San Francisco”
+from the database hbtn_0e_100_usa"""
 
 if __name__ == "__main__":
     from sys import argv
