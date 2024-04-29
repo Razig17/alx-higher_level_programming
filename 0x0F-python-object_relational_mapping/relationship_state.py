@@ -3,7 +3,6 @@
 This module contains the class definition of a State
 """
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
 from relationship_city import City, Base
 from sqlalchemy.orm import relationship
 
