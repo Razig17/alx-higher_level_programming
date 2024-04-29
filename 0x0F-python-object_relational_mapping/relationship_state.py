@@ -3,9 +3,9 @@
 This module contains the class definition of a State
 """
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
-from relationship_city import City, Base
 from sqlalchemy.orm import relationship
+from sqlalchemy import Column, Integer, String
+from relationship_city import Base, City
 
 
 class State(Base):
