@@ -13,14 +13,14 @@ if __name__ == "__main__":
     if sys.argv[1]:
         letter = sys.argv[1]
     else:
-        letter = ""
+        letter = ''
     parameter = {"q": letter}
     res = requests.post("http://0.0.0.0:5000/search_user", data=parameter)
     try:
         json = res.json()
-        if json:
+        if len(json) > 0:
             print("[{}] {}".format(json.get("id"), json.get("name")))
         else:
             print("No result")
-    except json.decoder.JSONDecodeError:
+    except ValueError:
         print("Not a valid JSON")
